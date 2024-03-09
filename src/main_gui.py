@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
-# import lib.logger_d_gui_asset as ls
+import lib.logger_d_gui_asset as ls
 import lib.analyse_csv as acv
 import sv_ttk
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
@@ -16,7 +16,7 @@ class MainApp:
         #setup
         self.master = master
         self.master.title("Map-y")
-        self.master.geometry("800x500")
+        self.master.geometry("800x550+500+300")
 
         #theme
         self.master.tk.call('source', 'Azure/azure.tcl')
@@ -172,13 +172,13 @@ class MainApp:
     
     def actual(self):
         global filename, filepath
-        # filename, filepath = ls.logger_data()
+        filename, filepath = ls.logger_data()
         
 
     
     def imaginary(self):
         global filename, filepath
-        # filename, filepath = ls.logger_data_img()
+        filename, filepath = ls.logger_data_img()
     
     def eegplot(self):
         global filename,filepath
