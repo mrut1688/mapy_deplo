@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
-import lib.logger_d_gui_asset as ls
+# import lib.logger_d_gui_asset as ls
 import lib.analyse_csv as acv
 import sv_ttk
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
@@ -21,6 +21,8 @@ class MainApp:
         #theme
         self.master.tk.call('source', 'Azure/azure.tcl')
         self.master.tk.call('set_theme', 'dark')
+        # self.master.tk.call('source', 'Sun-Valley/sv.tcl')
+        # self.master.tk.call('set_theme', 'dark')
         
         # Create the widgets for the second app
         self.notebook = ttk.Notebook(self.master)
@@ -152,13 +154,13 @@ class MainApp:
     
     def actual(self):
         global filename, filepath
-        filename, filepath = ls.logger_data()
+        # filename, filepath = ls.logger_data()
         
 
     
     def imaginary(self):
         global filename, filepath
-        filename, filepath = ls.logger_data_img()
+        # filename, filepath = ls.logger_data_img()
     
     def eegplot(self):
         global filename,filepath
@@ -370,12 +372,7 @@ class MainApp:
 if __name__ == "__main__":
     root = tk.Tk()
 
-    # Set the theme
-    # root.tk.call('source', "D:/matlab/ymaps_code/code/python/azure.tcl")
-    # root.tk.call("set_theme", "dark")
-    # sv_ttk.set_theme("dark")
     root.iconbitmap('mainicon.ico')
-
 
     app = MainApp(root)
 
@@ -385,6 +382,8 @@ if __name__ == "__main__":
     x_cordinate = int((root.winfo_screenwidth() / 2) - (root.winfo_width() / 2))
     y_cordinate = int((root.winfo_screenheight() / 2) - (root.winfo_height() / 2))
     root.geometry("+{}+{}".format(x_cordinate, y_cordinate-20))
-    
+
+    # sv_ttk.set_theme("dark")
+
     root.mainloop()
  

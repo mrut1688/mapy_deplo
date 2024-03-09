@@ -6,141 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="1d48a30a-d8a1-4178-887d-d258c94a2947" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/azure.tcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/logger_d_gui_asset.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/logger_d_gui_asset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Azure/azure.tcl" beforeDir="false" afterPath="$PROJECT_DIR$/src/Azure/azure.tcl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Azure/theme/dark.tcl" beforeDir="false" afterPath="$PROJECT_DIR$/src/Azure/theme/dark.tcl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main_gui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mapy_icon0 (4).ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sv.tcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark.tcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/box-accent.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/box-basic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/box-hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/box-invalid.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/button-hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/card.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/check-accent.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/check-basic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/check-hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/check-tri-accent.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/check-tri-basic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/check-tri-hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/circle-accent.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/circle-basic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/circle-hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/combo-button-basic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/combo-button-focus.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/combo-button-hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/down-accent.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/down.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/empty.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/hor-accent.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/hor-basic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/hor-hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/notebook.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/off-basic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/on-accent.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/on-basic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/outline-basic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/outline-hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/radio-accent.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/radio-basic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/radio-hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/radio-tri-accent.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/radio-tri-basic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/radio-tri-hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/rect-accent-hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/rect-accent.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/rect-basic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/rect-hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/right.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/scale-hor.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/scale-vert.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/separator.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/size.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/tab-basic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/tab-disabled.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/tab-hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/tick-hor-accent.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/tick-hor-basic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/tick-hor-hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/tick-vert-accent.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/tick-vert-basic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/tick-vert-hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/tree-basic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/tree-pressed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/up-accent.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/up.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/vert-accent.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/vert-basic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark/vert-hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light.tcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/box-accent.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/box-basic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/box-hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/box-invalid.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/button-hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/card.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/check-accent.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/check-basic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/check-hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/check-tri-accent.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/check-tri-basic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/check-tri-hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/circle-accent.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/circle-basic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/circle-hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/combo-button-basic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/combo-button-focus.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/combo-button-hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/down-accent.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/down.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/empty.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/hor-accent.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/hor-basic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/hor-hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/notebook.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/off-basic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/off-hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/on-accent.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/on-basic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/on-hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/outline-basic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/outline-hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/radio-accent.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/radio-basic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/radio-hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/radio-tri-accent.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/radio-tri-basic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/radio-tri-hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/rect-accent-hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/rect-accent.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/rect-basic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/rect-hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/right.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/scale-hor.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/scale-vert.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/separator.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/size.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/tab-basic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/tab-disabled.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/tab-hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/tick-hor-accent.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/tick-hor-basic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/tick-hor-hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/tick-vert-accent.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/tick-vert-basic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/tick-vert-hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/tree-basic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/tree-pressed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/up-accent.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/up.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/vert-accent.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/vert-basic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light/vert-hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/sprites_dark.tcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/sprites_light.tcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/spritesheet_dark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/spritesheet_light.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,7 +90,8 @@
       <option name="presentableId" value="Default" />
       <updated>1709919363735</updated>
       <workItem from="1709919364813" duration="145000" />
-      <workItem from="1709985311071" duration="1368000" />
+      <workItem from="1709985311071" duration="1522000" />
+      <workItem from="1709986950965" duration="1396000" />
     </task>
     <servers />
   </component>
@@ -230,6 +99,6 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/mapy_deplo$main_gui.coverage" NAME="main_gui Coverage Results" MODIFIED="1709986660960" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/mapy_deplo$main_gui.coverage" NAME="main_gui Coverage Results" MODIFIED="1709997210495" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
 </project>
