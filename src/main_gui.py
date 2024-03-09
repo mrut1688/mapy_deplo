@@ -13,11 +13,14 @@ filename=''
 filepath =''
 class MainApp:
     def __init__(self, master):
+        #setup
         self.master = master
         self.master.title("Map-y")
         self.master.geometry("800x800")
 
-        
+        #theme
+        self.master.tk.call('source', 'Azure/azure.tcl')
+        self.master.tk.call('set_theme', 'dark')
         
         # Create the widgets for the second app
         self.notebook = ttk.Notebook(self.master)
@@ -370,8 +373,8 @@ if __name__ == "__main__":
     # Set the theme
     # root.tk.call('source', "D:/matlab/ymaps_code/code/python/azure.tcl")
     # root.tk.call("set_theme", "dark")
-    sv_ttk.set_theme("dark")
-    root.iconbitmap('D:\matlab\ymaps_code\code\python\icon.ico')
+    # sv_ttk.set_theme("dark")
+    root.iconbitmap('mainicon.ico')
 
 
     app = MainApp(root)

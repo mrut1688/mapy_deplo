@@ -13,7 +13,7 @@ try:
     ser = serial.Serial('COM7', 115200)
 except  serial.serialutil.SerialException:
     messagebox.showinfo('instructions',"connect to comport7")
-    # add gui elemet here too
+    # add gui element here too
     
 def timer_callback():
     global closefile_flag
