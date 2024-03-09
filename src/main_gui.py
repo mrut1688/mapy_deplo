@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
-import lib.logger_d_gui_asset as ls
+# import lib.logger_d_gui_asset as ls
 import lib.analyse_csv as acv
 import sv_ttk
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
@@ -16,7 +16,7 @@ class MainApp:
         #setup
         self.master = master
         self.master.title("Map-y")
-        self.master.geometry("800x800")
+        self.master.geometry("800x500")
 
         #theme
         self.master.tk.call('source', 'Azure/azure.tcl')
@@ -47,7 +47,7 @@ class MainApp:
         # self.tab3 = ttk.Frame(self.tab2)
         # self.tab4 = ttk.Frame(self.tab2)
 
-        self.notebook1.add(self.tab3, text="logdata")
+        self.notebook1.add(self.tab3, text="Logdata")
         # self.notebook1.add(self.tab4, text="Visualise")
 
         # self.notebook2=ttk.Frame(self.tab4)
@@ -55,10 +55,16 @@ class MainApp:
         
         self.tab5 = ttk.Frame(self.notebook1)
         self.tab6 = ttk.Frame(self.notebook1)
-        label1 = ttk.Label(self.tab1, text="Mapy Ai model")
-        label1.pack(pady=20)
+        self.label1 = ttk.Label(
+            self.tab1,
+            text="Mapy AI model",
+            justify="center",
+            font=("-size", 15, "-weight", "bold"),
+        )
+        # label1 = ttk.Label(self.tab1, text="Mapy AI model")
+        self.label1.pack(pady=20)
         # label3.pack()
-        liveb=ttk.Button(self.tab1,text="start model",style="Accent.TButton",command=self.callmodel)
+        liveb=ttk.Button(self.tab1,text="Start Model",style="Accent.TButton",command=self.callmodel)
         liveb.pack(pady=20)
         
         
@@ -100,13 +106,25 @@ class MainApp:
         
         
         
-        self.notebook1.add(self.tab5, text="basic visualisation")
-        self.notebook1.add(self.tab6, text="Advanced component visualisation")
-        
-        label2 = ttk.Label(self.tab3, text="Ensure that you have connected the device to comport7")
-        label2.pack(pady=20)
-        label3 = ttk.Label(self.tab5, text="visualisation oƒ EEG using FFT and PSD with corelation of muscle states")
-        label3.pack(pady=20)
+        self.notebook1.add(self.tab5, text="Basic Visualisation")
+        self.notebook1.add(self.tab6, text="Advanced Component Visualisation")
+
+        self.label2 = ttk.Label(
+            self.tab3,
+            text="Ensure that you have connected the device to comport7",
+            justify="center",
+            font=("-size", 15, "-weight", "bold"),
+        )
+        self.label2.pack(pady=20)
+
+        self.label3 = ttk.Label(
+            self.tab5,
+            text="Visualisation of EEG using FFT and PSD with Correlation of Muscle States",
+            justify="center",
+            font=("-size", 15, "-weight", "bold"),
+        )
+        self.label3.pack(pady=20)
+
         actual = ttk.Button(self.tab3, text="muscle movement data",style="Accent.TButton", command=self.actual)
         actual.pack(pady=20)
 
@@ -154,13 +172,13 @@ class MainApp:
     
     def actual(self):
         global filename, filepath
-        filename, filepath = ls.logger_data()
+        # filename, filepath = ls.logger_data()
         
 
     
     def imaginary(self):
         global filename, filepath
-        filename, filepath = ls.logger_data_img()
+        # filename, filepath = ls.logger_data_img()
     
     def eegplot(self):
         global filename,filepath
