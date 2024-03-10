@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
-import lib.logger_d_gui_asset as ls
+# import lib.logger_d_gui_asset as ls
 import lib.analyse_csv as acv
 import sv_ttk
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
@@ -16,12 +16,14 @@ class MainApp:
         #setup
         self.master = master
         self.master.title("Map-y")
-        self.master.geometry("800x800")
+        self.master.geometry("800x500")
 
         #theme
         self.master.tk.call('source', 'src/Azure/azure.tcl')
         
         self.master.tk.call('set_theme', 'dark')
+        # self.master.tk.call('source', 'Sun-Valley/sv.tcl')
+        # self.master.tk.call('set_theme', 'dark')
         
         # Create the widgets for the second app
         self.notebook = ttk.Notebook(self.master)
@@ -46,7 +48,7 @@ class MainApp:
         # self.tab3 = ttk.Frame(self.tab2)
         # self.tab4 = ttk.Frame(self.tab2)
 
-        self.notebook1.add(self.tab3, text="logdata")
+        self.notebook1.add(self.tab3, text="Logdata")
         # self.notebook1.add(self.tab4, text="Visualise")
 
         # self.notebook2=ttk.Frame(self.tab4)
@@ -54,10 +56,16 @@ class MainApp:
         
         self.tab5 = ttk.Frame(self.notebook1)
         self.tab6 = ttk.Frame(self.notebook1)
-        label1 = ttk.Label(self.tab1, text="Mapy Ai model")
-        label1.pack(pady=20)
+        self.label1 = ttk.Label(
+            self.tab1,
+            text="Mapy AI model",
+            justify="center",
+            font=("-size", 15, "-weight", "bold"),
+        )
+        # label1 = ttk.Label(self.tab1, text="Mapy AI model")
+        self.label1.pack(pady=20)
         # label3.pack()
-        liveb=ttk.Button(self.tab1,text="start model",command=self.callmodel)
+        liveb=ttk.Button(self.tab1,text="Start Model",style="Accent.TButton",command=self.callmodel)
         liveb.pack(pady=20)
         
         
@@ -99,49 +107,61 @@ class MainApp:
         
         
         
-        self.notebook1.add(self.tab5, text="basic visualisation")
-        self.notebook1.add(self.tab6, text="Advanced component visualisation")
-        
-        label2 = ttk.Label(self.tab3, text="Ensure that you have connected the device to comport7")
-        label2.pack(pady=20)
-        label3 = ttk.Label(self.tab5, text="visualisation oƒ EEG using FFT and PSD with corelation of muscle states")
-        label3.pack(pady=20)
-        actual = ttk.Button(self.tab3, text="muscle movement data", command=self.actual)
+        self.notebook1.add(self.tab5, text="Basic Visualisation")
+        self.notebook1.add(self.tab6, text="Advanced Component Visualisation")
+
+        self.label2 = ttk.Label(
+            self.tab3,
+            text="Ensure that you have connected the device to comport7",
+            justify="center",
+            font=("-size", 15, "-weight", "bold"),
+        )
+        self.label2.pack(pady=20)
+
+        self.label3 = ttk.Label(
+            self.tab5,
+            text="Visualisation of EEG using FFT and PSD with Correlation of Muscle States",
+            justify="center",
+            font=("-size", 15, "-weight", "bold"),
+        )
+        self.label3.pack(pady=20)
+
+        actual = ttk.Button(self.tab3, text="muscle movement data",style="Accent.TButton", command=self.actual)
         actual.pack(pady=20)
 
-        imaginary = ttk.Button(self.tab3, text="Imaginary data", command=self.imaginary)
+        imaginary = ttk.Button(self.tab3, text="Imaginary data",style="Accent.TButton" ,command=self.imaginary)
         imaginary.pack(pady=20)
-        eegpl=ttk.Button(self.tab5,text='Plot eeg signal vs Time',command=self.eegplot)
+        eegpl=ttk.Button(self.tab5,text='Plot eeg signal vs Time',style="Accent.TButton",command=self.eegplot)
         eegpl.pack(pady=10)
-        emgpl=ttk.Button(self.tab5,text='Plot eeg signal vs Time with Muscle-states',command=self.eegemgplot)
+        emgpl=ttk.Button(self.tab5,text='Plot eeg signal vs Time with Muscle-states',style="Accent.TButton",command=self.eegemgplot)
         emgpl.pack(pady=10)
         
-        fftpl=ttk.Button(self.tab5,text='plot FFT of EEG chx',command=self.fftplot)
+        fftpl=ttk.Button(self.tab5,text='plot FFT of EEG chx',style="Accent.TButton",command=self.fftplot)
         fftpl.pack(pady=10)
         
-        psdpl1=ttk.Button(self.tab5,text='PSD of EEG chx T7',command=self.psdplotT7)
+        psdpl1=ttk.Button(self.tab5,text='PSD of EEG chx T7',style="Accent.TButton",command=self.psdplotT7)
         psdpl1.pack(pady=10)
-        psdpl2=ttk.Button(self.tab5,text='PSD of EEG chx C3',command=self.psdplotC3)
+        psdpl2=ttk.Button(self.tab5,text='PSD of EEG chx C3',style="Accent.TButton",command=self.psdplotC3)
         psdpl2.pack(pady=10)
-        psdpl3=ttk.Button(self.tab5,text='PSD of EEG chx C4',command=self.psdplotC4)
+        psdpl3=ttk.Button(self.tab5,text='PSD of EEG chx C4',style="Accent.TButton",command=self.psdplotC4)
         psdpl3.pack(pady=10)
-        psdpl4=ttk.Button(self.tab5,text='PSD of EEG chx T8',command=self.psdplotT8)
+        psdpl4=ttk.Button(self.tab5,text='PSD of EEG chx T8',style="Accent.TButton",command=self.psdplotT8)
         psdpl4.pack(pady=10)
         
         
-        mne_pl2=ttk.Button(self.tab6,text='ICA PLOT',command=self.plot_ica)
+        mne_pl2=ttk.Button(self.tab6,text='ICA PLOT',style="Accent.TButton",command=self.plot_ica)
         mne_pl2.pack(pady=10)
-        mne_pl3=ttk.Button(self.tab6,text='epoch plot of Rest movement',command=self.plot_epochs2)
+        mne_pl3=ttk.Button(self.tab6,text='epoch plot of Rest movement',style="Accent.TButton",command=self.plot_epochs2)
         mne_pl3.pack(pady=10)
-        mne_pl4=ttk.Button(self.tab6,text='epoch plot of Right-Hand slow Movement',command=self.plot_epochs3)
+        mne_pl4=ttk.Button(self.tab6,text='epoch plot of Right-Hand slow Movement',style="Accent.TButton",command=self.plot_epochs3)
         mne_pl4.pack(pady=10)
-        mne_pl5=ttk.Button(self.tab6,text='epoch plot of Right-Hand fast Movement',command=self.plot_epochs4)
+        mne_pl5=ttk.Button(self.tab6,text='epoch plot of Right-Hand fast Movement',style="Accent.TButton",command=self.plot_epochs4)
         mne_pl5.pack(pady=10)
-        mne_pl6=ttk.Button(self.tab6,text='epoch plot of Left-Hand slow Movement',command=self.plot_epochs5)
+        mne_pl6=ttk.Button(self.tab6,text='epoch plot of Left-Hand slow Movement',style="Accent.TButton",command=self.plot_epochs5)
         mne_pl6.pack(pady=10)
-        mne_pl7=ttk.Button(self.tab6,text='epoch plot of Left-Hand fast Movement',command=self.plot_epochs6)
+        mne_pl7=ttk.Button(self.tab6,text='epoch plot of Left-Hand fast Movement',style="Accent.TButton",command=self.plot_epochs6)
         mne_pl7.pack(pady=10)
-        mne_pl8=ttk.Button(self.tab6,text='epoch plot of Random Hand Movement',command=self.plot_epochs7)
+        mne_pl8=ttk.Button(self.tab6,text='epoch plot of Random Hand Movement',style="Accent.TButton",command=self.plot_epochs7)
         mne_pl8.pack(pady=10)
 # class Redirect():
 
@@ -153,13 +173,13 @@ class MainApp:
     
     def actual(self):
         global filename, filepath
-        filename, filepath = ls.logger_data()
+        # filename, filepath = ls.logger_data()
         
 
     
     def imaginary(self):
         global filename, filepath
-        filename, filepath = ls.logger_data_img()
+        # filename, filepath = ls.logger_data_img()
     
     def eegplot(self):
         global filename,filepath
@@ -386,6 +406,8 @@ if __name__ == "__main__":
     x_cordinate = int((root.winfo_screenwidth() / 2) - (root.winfo_width() / 2))
     y_cordinate = int((root.winfo_screenheight() / 2) - (root.winfo_height() / 2))
     root.geometry("+{}+{}".format(x_cordinate, y_cordinate-20))
-    
+
+    # sv_ttk.set_theme("dark")
+
     root.mainloop()
  
