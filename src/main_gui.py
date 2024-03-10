@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
-# import lib.logger_d_gui_asset as ls
+#import lib.logger_d_gui_asset as ls
 import lib.analyse_csv as acv
 import sv_ttk
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
@@ -73,36 +73,36 @@ class MainApp:
         
         self.progressBar1= ttk.Progressbar(self.tab1, mode='determinate',
                                           maximum=50, length=200, orient= tk.VERTICAL)
-        self.progressBar1.pack(padx=20,side = tk.LEFT,anchor='nw')
+        self.progressBar1.pack(padx=20,side = tk.LEFT)
         lpb1 = ttk.Label(self.tab1, text="REST")
-        lpb1.pack(padx=0,side=tk.LEFT,expand=False,anchor='nw')
+        lpb1.pack(padx=0,side=tk.LEFT,expand=False)
         self.progressBar2= ttk.Progressbar(self.tab1, mode='determinate',
                                           maximum=50, length=200, orient= tk.VERTICAL)
-        self.progressBar2.pack(padx=20,side = tk.LEFT,anchor='nw')
+        self.progressBar2.pack(padx=20,side = tk.LEFT)
         lpb2 = ttk.Label(self.tab1, text="RSM")
-        lpb2.pack(padx=0,side=tk.LEFT,expand=False,anchor='nw')
+        lpb2.pack(padx=0,side=tk.LEFT,expand=False)
         
         self.progressBar3= ttk.Progressbar(self.tab1, mode='determinate',
                                           maximum=50, length=200, orient= tk.VERTICAL)
-        self.progressBar3.pack(padx=20,side = tk.LEFT,anchor='nw')
+        self.progressBar3.pack(padx=20,side = tk.LEFT)
         lpb3 = ttk.Label(self.tab1, text="RFM")
-        lpb3.pack(padx=0,side=tk.LEFT,expand=False,anchor='nw')
+        lpb3.pack(padx=0,side=tk.LEFT,expand=False)
         self.progressBar4= ttk.Progressbar(self.tab1, mode='determinate',
                                           maximum=50, length=200, orient= tk.VERTICAL)
-        self.progressBar4.pack(padx=20,side = tk.LEFT,anchor='nw')
+        self.progressBar4.pack(padx=20,side = tk.LEFT)
         lpb4 = ttk.Label(self.tab1, text="LSM")
-        lpb4.pack(padx=0,side=tk.LEFT,expand=False,anchor='nw')
+        lpb4.pack(padx=0,side=tk.LEFT,expand=False)
         
         self.progressBar5= ttk.Progressbar(self.tab1, mode='determinate',
                                           maximum=50, length=200, orient= tk.VERTICAL)
-        self.progressBar5.pack(padx=20,side = tk.LEFT,anchor='nw')
+        self.progressBar5.pack(padx=20,side = tk.LEFT)
         lpb5 = ttk.Label(self.tab1, text="LFM")
-        lpb5.pack(padx=0,side=tk.LEFT,expand=False,anchor='nw')
+        lpb5.pack(padx=0,side=tk.LEFT,expand=False)
         self.progressBar6= ttk.Progressbar(self.tab1, mode='determinate',
                                           maximum=50, length=200, orient= tk.VERTICAL)
-        self.progressBar6.pack(padx=20,side = tk.LEFT,anchor='nw')
+        self.progressBar6.pack(padx=20,side = tk.LEFT)
         lpb6 = ttk.Label(self.tab1, text="RAND")
-        lpb6.pack(padx=0,side=tk.LEFT,expand=False,anchor='nw')
+        lpb6.pack(padx=0,side=tk.LEFT,expand=False)
         
         
         
