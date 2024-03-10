@@ -21,6 +21,19 @@ class MainApp:
         #theme
         self.master.tk.call('source', 'Azure/azure.tcl')
         self.master.tk.call('set_theme', 'dark')
+
+        def change_theme():
+            # NOTE: The theme's real name is azure-<mode>
+            if root.tk.call("ttk::style", "theme", "use") == "azure-dark":
+                # Set light theme
+                root.tk.call("set_theme", "light")
+            else:
+                # Set dark theme
+                root.tk.call("set_theme", "dark")
+
+        # Remember, you have to use ttk widgets
+        self.switch = ttk.Checkbutton(self.master,text=":Theme",style="Switch.TCheckbutton", command=change_theme)
+        self.switch.pack(side=tk.BOTTOM, anchor=tk.SE)
         # self.master.tk.call('source', 'Sun-Valley/sv.tcl')
         # self.master.tk.call('set_theme', 'dark')
         
