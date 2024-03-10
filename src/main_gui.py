@@ -32,8 +32,15 @@ class MainApp:
                 root.tk.call("set_theme", "dark")
 
         # Remember, you have to use ttk widgets
-        self.switch = ttk.Checkbutton(self.master,text=":Theme",style="Switch.TCheckbutton", command=change_theme)
+
+        self.switch = ttk.Checkbutton(self.master,style="Switch.TCheckbutton", command=change_theme)
         self.switch.pack(side=tk.BOTTOM, anchor=tk.SE)
+        self.themelabel = ttk.Label(
+            self.master,
+            text="Theme",
+            font=("-size", 10),
+        )
+        self.themelabel.pack(padx=10,side=tk.BOTTOM, anchor=tk.SE,expand=True)
         # self.master.tk.call('source', 'Sun-Valley/sv.tcl')
         # self.master.tk.call('set_theme', 'dark')
         
