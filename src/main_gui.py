@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
-#import lib.logger_d_gui_asset as ls
+import lib.logger_d_gui_asset as ls
 import lib.analyse_csv as acv
 import sv_ttk
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
@@ -8,6 +8,7 @@ import matplotlib.pyplot as plt
 from matplotlib.figure import Figure
 import numpy as np
 import lib.mne_gui as mg 
+import serial 
 
 filename=''
 filepath =''
@@ -16,12 +17,32 @@ class MainApp:
         #setup
         self.master = master
         self.master.title("Map-y")
-        self.master.geometry("800x500")
+        self.master.geometry("800x550+500+300")
 
         #theme
         self.master.tk.call('source', 'src/Azure/azure.tcl')
         
         self.master.tk.call('set_theme', 'dark')
+
+        def change_theme():
+            # NOTE: The theme's real name is azure-<mode>
+            if root.tk.call("ttk::style", "theme", "use") == "azure-dark":
+                # Set light theme
+                root.tk.call("set_theme", "light")
+            else:
+                # Set dark theme
+                root.tk.call("set_theme", "dark")
+
+        # Remember, you have to use ttk widgets
+
+        self.switch = ttk.Checkbutton(self.master,style="Switch.TCheckbutton", command=change_theme)
+        self.switch.pack(side=tk.BOTTOM, anchor=tk.SE)
+        self.themelabel = ttk.Label(
+            self.master,
+            text="Theme",
+            font=("-size", 10),
+        )
+        self.themelabel.pack(padx=10,side=tk.BOTTOM, anchor=tk.SE,expand=True)
         # self.master.tk.call('source', 'Sun-Valley/sv.tcl')
         # self.master.tk.call('set_theme', 'dark')
         
@@ -173,13 +194,13 @@ class MainApp:
     
     def actual(self):
         global filename, filepath
-        # filename, filepath = ls.logger_data()
+        filename, filepath = ls.logger_data()
         
 
     
     def imaginary(self):
         global filename, filepath
-        # filename, filepath = ls.logger_data_img()
+        filename, filepath = ls.logger_data_img()
     
     def eegplot(self):
         global filename,filepath
@@ -355,7 +376,18 @@ class MainApp:
         else:
             mg.epochp6(filename)        
 
-    def callmodel():
+    def callmodel(self):
+        try:
+            serlive=ls.ser
+        except AttributeError:
+            pass
+        while(True):
+            try :
+                print(str(serlive.readline().decode('utf-8').strip().
+                            split(',')).replace("[","").replace("]","").
+                            replace("'","").replace(" ",""))
+            except UnboundLocalError:
+                pass
         return 0
 
 
